@@ -4,7 +4,7 @@
 
 import csv
 import urllib2
-import StringIO import StringIO
+from StringIO import StringIO
 
 class Server:
     """implements Server class,modeled as a Print Queue"""
@@ -27,7 +27,8 @@ class Server:
     def start_next(self,new_task):
         self.current_task = new_task
         self.time_remaining = new_task.get_time()
-
+
+
 
 class Request:
     """implements Request class to represent tasks for the Server Queue"""
